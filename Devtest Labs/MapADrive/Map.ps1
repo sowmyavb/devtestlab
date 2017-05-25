@@ -1,6 +1,9 @@
 try
 {
-net use z: \\samples.file.core.windows.net\logs /u:AZURE\samples 2/O6l7NZQ1Bj0fDr6b861XQym81oMYuN66MnXKCGD3k13pCU5CxjBsFfRh4AFQT7IgTID8rb7Wi3E2onoAk2xQ==
+
+cmdkey /add:executeablesrepo.file.core.windows.net /user:executeablesrepo /pass:a9I1VAGZyxE9Vn+apQ8dSL6LPkM5FOAqA5DGJJk0OFNKbo/yFaGFVi5HbDgiKQEcvz6z8eWje6jhwuk8D7ubjw==
+
+net use z: \\executeablesrepo.file.core.windows.net\repo /u:AZURE\executeablesrepo a9I1VAGZyxE9Vn+apQ8dSL6LPkM5FOAqA5DGJJk0OFNKbo/yFaGFVi5HbDgiKQEcvz6z8eWje6jhwuk8D7ubjw==
 }
 catch
 {
