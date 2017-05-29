@@ -10,9 +10,7 @@ catch
 {
     Write-Error "Failed to download WebRDP Client Setup"
 }
-
-Start-Sleep(10)
-
+Write-Host "downloaded webRDP-Client_1.2.0.42-64.exe successfully"
 $webrdplic = "https://g7crtipl-my.sharepoint.com/personal/sowmya_badiger_g7cr_in/_layouts/15/guestaccess.aspx?docid=148f89d5479e643ba9d8ea518471c223a&authkey=AT6cmaKmfFZAacJeEpqZXvc"
 
 $webrdplicensepath = "${env:Temp}\G7_CR_Technologies-license.exe"
@@ -26,7 +24,7 @@ catch
     Write-Error "Failed to download webrdp license file"
 }
 
-Start-Sleep(10)
+Write-Host "downloaded webRDP license file successfully"
 
 $autoiturl = "https://g7crtipl-my.sharepoint.com/personal/sowmya_badiger_g7cr_in/_layouts/15/guestaccess.aspx?docid=1f04930c056394cefa2d2bb14adff27de&authkey=AW5nU8odtmrt7jhLtikDPf4"
 
@@ -40,7 +38,8 @@ catch
 {
     Write-Error "Failed to download autoitwebrdpclient exe"
 }
-Start-Sleep(10)
+
+Write-Host "downloaded autoit webRDP "
 
 try
 {
