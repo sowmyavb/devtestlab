@@ -13,7 +13,7 @@ catch
 Write-Host "downloaded webRDP-Client_1.2.0.42-64.exe successfully"
 $webrdplic = "https://g7crtipl-my.sharepoint.com/personal/sowmya_badiger_g7cr_in/_layouts/15/guestaccess.aspx?docid=148f89d5479e643ba9d8ea518471c223a&authkey=AT6cmaKmfFZAacJeEpqZXvc"
 
-$webrdplicensepath = "${env:Temp}\G7_CR_Technologies-license.exe"
+$webrdplicensepath = "${env:Temp}\G7_CR_Technologies-license.swl"
 
 try
 {
