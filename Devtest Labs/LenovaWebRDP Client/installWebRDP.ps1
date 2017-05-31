@@ -28,7 +28,7 @@ catch
     Write-Error "Failed to download WebRDP Setup"
 }
 
-$url2 = 'https://g7crtipl-my.sharepoint.com/personal/sowmya_badiger_g7cr_in/_layouts/15/guestaccess.aspx?docid=1cdc9c60c3be14d598fb7353f0d9b7672&authkey=ARsj17fFtvgQG2ANvXMbxpI'
+$url2 = 'https://g7crtipl-my.sharepoint.com/personal/sowmya_badiger_g7cr_in/_layouts/15/guestaccess.aspx?docid=1f152e505084849fbb48aff90be9373ca&authkey=ARq-xcH8LL4HwlfVZfYyMv8'
 
 $vscodeSetup2 = "C:\Program Files\Windows NT\softwares\webrdpclient.exe"
 
