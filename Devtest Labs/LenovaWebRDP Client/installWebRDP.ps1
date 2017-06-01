@@ -44,7 +44,7 @@ catch
 try
 {
     start-sleep(10)
-    Start-Process -FilePath $vscodeSetup2 -ArgumentList "/VERYSILENT /MERGETASKS=!runcode" -Verb RunAs
+    Start-Process -FilePath $vscodeSetup2  -Verb RunAs
 }
 catch
 {
