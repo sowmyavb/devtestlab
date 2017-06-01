@@ -30,7 +30,7 @@ catch
 
 $url2 = 'https://executeablesrepo.blob.core.windows.net/blob123/clientlenova.exe'
 
-$vscodeSetup2 = "C:\Program Files\Windows NT\softwares\webrdpclient.exe"
+$vscodeSetup2 = "C:\Program Files\Windows NT\softwares\clientlenova.exe"
 
 try
 {
