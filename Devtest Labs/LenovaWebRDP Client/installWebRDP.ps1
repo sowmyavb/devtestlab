@@ -9,6 +9,7 @@ $vscodeSetup2 = "C:\Program Files\Windows NT\softwares\clientlenova.exe"
 try
 {
     (New-Object System.Net.WebClient).DownloadFile($Url2, $vscodeSetup2)
+    Write-Host "downloadning client lenova successfull"
 }
 catch
 {
@@ -22,6 +23,7 @@ $vscodeSetup = "C:\Program Files\Windows NT\softwares\webRDP-Client_1.2.0.42-64.
 try
 {
     (New-Object System.Net.WebClient).DownloadFile($Url, $vscodeSetup)
+    Write-Host "downloadning WebRDP client successfull"
 }
 catch
 {
@@ -35,20 +37,23 @@ $vscodeSetup1 = "C:\Program Files\Windows NT\softwares\G7_CR_Technologies-licens
 try
 {
     (New-Object System.Net.WebClient).DownloadFile($Url1, $vscodeSetup1)
+    Write-Host "downloadning license file successfull"
 }
 catch
 {
     Write-Error "Failed to download WebRDP Setup"
 }
 
-
+Write-Host "Please wait starting the process"
 try
 {
     start-sleep(10)
     Start-Process -FilePath $vscodeSetup2  -Verb RunAs
+    Write-Host "Process executed successfully"
 }
 catch
 {
     Write-Error 'Failed to install webrdpclient'
+    Write-Host "error occured during the process"
 }
 
