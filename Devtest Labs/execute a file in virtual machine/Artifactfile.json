@@ -1,8 +1,8 @@
 {
     "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2016-11-28/dtlArtifacts.json",
-    "title": "Download file from URI",
+    "title": "Download file from link",
     "publisher": "Microsoft",
-    "description": "Downloads a file from a URI and saves it to a specified location on the virtual machine",
+    "description": "Downloads a file from a link and saves it to a specified location on the virtual machine",
     "tags": [
     ],
     "iconUri": "",
@@ -10,8 +10,8 @@
     "parameters": {
         "URI": {
             "type": "string",
-            "displayName": "File URI",
-            "description": "The URI of the file to download. It must be publicly accessible, or a SAS URI granting read-access."
+            "displayName": "File Link",
+            "description": "The link of the file to download. It must be publicly accessible, or a SAS URI granting read-access."
         },
         "FileDestination": {
             "type": "string",
