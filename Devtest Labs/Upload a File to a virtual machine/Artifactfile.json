@@ -7,7 +7,7 @@
         "WebRDP",
         "Client"
             ],
-    "iconUri": "https://github.com/Azure/azure-devtestlab/raw/master/Artifacts/windows-vscode/vscode%20icon.png",
+    "iconUri": "https://executeablesrepo.blob.core.windows.net/blob123/G7.png",
     "targetOsType": "Windows",
     "runCommand": {
         "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass \"& ./uploadfile.ps1', ' -Uri ', parameters('URI'), ' -Path ''', parameters('FileDestination'), '''\"')]"
