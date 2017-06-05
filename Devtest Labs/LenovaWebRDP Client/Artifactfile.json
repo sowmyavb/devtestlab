@@ -7,7 +7,7 @@
         "WebRDP",
         "Client"
             ],
-    "iconUri": "https://github.com/Azure/azure-devtestlab/raw/master/Artifacts/windows-vscode/vscode%20icon.png",
+    "iconUri": "https://github.com/sowmyavb/devtestlab/blob/master/Devtest%20Labs/LenovaWebRDP%20Client/g7.png",
     "targetOsType": "Windows",
     "runCommand": {
         "commandToExecute": "powershell.exe -ExecutionPolicy bypass -File installWebRDP.ps1"
