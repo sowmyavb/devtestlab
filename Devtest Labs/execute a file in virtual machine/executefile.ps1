@@ -33,6 +33,7 @@ function Handle-LastError
 
 
 trap
+{
 
     Handle-LastError
 }
