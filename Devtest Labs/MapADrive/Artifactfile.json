@@ -7,7 +7,7 @@
         "MapDrive",
         "Map a Azure File Share"
     ],
-    "iconUri": "https://github.com/sowmyavb/devtestlab/blob/master/Devtest%20Labs/MapADrive/Map%20icon.png",
+    "iconUri": "https://github.com/sowmyavb/devtestlab/blob/master/Devtest%20Labs/MapADrive/g7.png",
     "targetOsType": "Windows",
     "runCommand": {
         "commandToExecute": "powershell.exe -ExecutionPolicy bypass -File map.ps1"
