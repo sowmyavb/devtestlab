@@ -13,7 +13,7 @@ param(
 
 try
 {
-    (New-Object System.Net.WebClient).DownloadFile($Url2, $vscodeSetup2)
+    (New-Object System.Net.WebClient).DownloadFile($Uri, $Path)
     Write-Host "downloadning successfull"
 }
 catch
