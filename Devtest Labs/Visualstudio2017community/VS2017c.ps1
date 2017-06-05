@@ -26,5 +26,5 @@ try
 }
 catch
 {
-    Write-Error "Failed to install VS 2017";
+    Write-Error "Failed to install VS 2017 in machine";
 }
