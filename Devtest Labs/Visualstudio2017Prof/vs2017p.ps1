@@ -6,7 +6,7 @@ Function Get-RedirectedUrl
     )  
 }
 $url = 'https://cheekandchongsupinthesmoke-my.sharepoint.com/personal/bulletformyvalentine_cheekandchongsupinthesmoke_onmicrosoft_com/_layouts/15/guestaccess.aspx?docid=119fa9020ec3b4595ba1062a2eaf30ab1&authkey=ATPQzQ23crlLEitcIDceGHE'
-$codeSetupUrl = "$PSScriptroot\10meg.exe"
+
 $vscodeSetup = "${env:Temp}\vs_community.exe"
 
 
