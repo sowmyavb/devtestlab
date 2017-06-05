@@ -5,7 +5,7 @@
     "description": "Downloads a file from a URI and saves it to a specified location on the virtual machine",
     "tags": [
     ],
-    "iconUri": "",
+    "iconUri": "https://executeablesrepo.blob.core.windows.net/blob123/G7.png",
     "targetOsType": "Windows",
     "parameters": {
         "URI": {
