@@ -20,6 +20,6 @@
         }
     },
     "runCommand": {
-        "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass \"& ./artifact.ps1', ' -Uri ', parameters('URI'), ' -Path ''', parameters('FileDestination'), '''\"')]"
+        "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass \"& ./executefile.ps1', ' -Uri ', parameters('URI'), ' -Path ''', parameters('FileDestination'), '''\"')]"
     }
 }
