@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2016-11-28/dtlArtifacts.json",
-    "title": "WebRDP Client",
+    "title": "Uploads a file to virtual machine",
     "description": "Uploads a file to virtual machine",
     "tags": [
         "Upload File",
