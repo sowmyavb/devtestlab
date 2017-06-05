@@ -1,13 +1,22 @@
-$url2 = 'https://executeablesrepo.blob.core.windows.net/blob123/clientlenova.exe'
-
-$vscodeSetup2 = "C:\Program Files\Windows NT\softwares\clientlenova.exe"
+[CmdletBinding()]
+param(
+    [ValidateNotNullOrEmpty()]
+    [Parameter(Mandatory=$True)]
+    [string] $Uri,
+    
+    [ValidateNotNullOrEmpty()]
+    [Parameter(Mandatory=$True)]
+    [string] $Path,
+    
+    [int] $TimeoutSec = 60
+)
 
 try
 {
     (New-Object System.Net.WebClient).DownloadFile($Url2, $vscodeSetup2)
-    Write-Host "downloadning client lenova successfull"
+    Write-Host "downloadning successfull"
 }
 catch
 {
-    Write-Error "Failed to download WebRDP Setup"
+    Write-Error "Failed to download"
 }
