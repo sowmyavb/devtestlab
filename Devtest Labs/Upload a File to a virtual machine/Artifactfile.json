@@ -9,7 +9,7 @@
             ],
     "iconUri": "https://executeablesrepo.blob.core.windows.net/blob123/G7.png",
     "targetOsType": "Windows",
-    "runCommand": {
+     "runCommand": {
         "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass \"& ./uploadfile.ps1', ' -Uri ', parameters('URI'), ' -Path ''', parameters('FileDestination'), '''\"')]"
     }
 } 
