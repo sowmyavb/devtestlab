@@ -10,6 +10,6 @@
     "iconUri": "https://executeablesrepo.blob.core.windows.net/blob123/G7.png",
     "targetOsType": "Windows",
     "runCommand": {
-        "commandToExecute": "powershell.exe -ExecutionPolicy bypass -File vs2017.ps1"
+        "commandToExecute": "powershell.exe -ExecutionPolicy bypass -File vs2017p.ps1"
     }
 }
