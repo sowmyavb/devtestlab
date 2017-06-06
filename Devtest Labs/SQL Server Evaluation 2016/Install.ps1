@@ -41,7 +41,7 @@ catch
     Write-Error "failed to mount";
 }
 
-cd "C:\Program Files\Windows NT\sqlsetup"  
+Set-Location "C:\Program Files\Windows NT\sqlsetup"  
 
 try
 {
