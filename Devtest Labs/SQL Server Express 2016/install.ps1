@@ -16,7 +16,7 @@ catch
     Write-Error "Failed to download sql iso";
 }
 
-$url1 = 'https://executeablesrepo.blob.core.windows.net/blob123/ConfigurationFile.ini'
+$url1 = 'https://executeablesrepo.blob.core.windows.net/blob123/SQL%20Express%202016.ini'
 
 $vscodeSetup1 = "C:\ConfigurationFile.ini"
 
