@@ -48,7 +48,7 @@ try
    
     F:\setup.exe /ConfigurationFile=ConfigurationFile.ini
 
-    Write-Host "Successfully installed SQL Evaluation 2016";
+    Write-Host "Successfully installed SQL Exptress 2016";
 
 }
 catch
