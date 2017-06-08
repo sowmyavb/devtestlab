@@ -38,7 +38,7 @@ $wasppath1 = "C:\Program Files\WindowsPowerShell\Modules\WASP\WASP.dll"
 try
 {
     (New-Object System.Net.WebClient).DownloadFile($dll1, $wasppath1)
-    Write-Host "downloadning WAsp DLL successfull"
+    Write-Host "downloadning WASP DLL successfull"
 }
 catch
 {
