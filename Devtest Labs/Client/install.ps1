@@ -76,19 +76,19 @@ catch
 }
 
 
-$psurl = 'https://executeablesrepo.blob.core.windows.net/blob123/client.ps1'
+#*$psurl = 'https://executeablesrepo.blob.core.windows.net/blob123/client.ps1'
 
-$pssetup = "C:\WEBRDPCLIENT\training\client.ps1"
+#$pssetup = "C:\WEBRDPCLIENT\training\client.ps1"
 
-try
-{
-    (New-Object System.Net.WebClient).DownloadFile($psUrl, $pssetup)
-    Write-Host "downloadning client ps1 successfull"
-}
-catch
-{
-    Write-Error "Failed to download WebRDP Setup"
-}
+#try
+#{
+  #  (New-Object System.Net.WebClient).DownloadFile($psUrl, $pssetup)
+ #   Write-Host "downloadning client ps1 successfull"
+#}
+#catch
+#{
+#    Write-Error "Failed to download WebRDP Setup"
+#}
 
 try
 {
