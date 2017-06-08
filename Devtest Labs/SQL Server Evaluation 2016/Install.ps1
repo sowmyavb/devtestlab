@@ -33,6 +33,9 @@ catch
 
 try
 {
+    $mountResult = Mount-DiskImage "C:\Program Files\Windows NT\sqlsetup\SQLServer2016-x64-ENU.iso" -PassThr
+    $driveLetter = ($mountResult | Get-Volume).DriveLetter
+    $filepath=$driveLetter+":\"+"setup.exe"
     Mount-DiskImage -ImagePath "C:\Program Files\Windows NT\sqlsetup\SQLServer2016-x64-ENU.iso"
     Write-Host "Mounting  successfull"
 }
@@ -46,7 +49,7 @@ Set-Location "C:\"
 try
 {
    
-    F:\setup.exe /ConfigurationFile=ConfigurationFile.ini
+    Start-Process -FilePath $filepath -ArgumentList "/ConfigurationFile=ConfigurationFile.ini"
 
     Write-Host "Successfully installed SQL Evaluation 2016";
 
