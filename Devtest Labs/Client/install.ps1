@@ -93,7 +93,7 @@ catch
 
 Import-Module WASP -Force 
 
-Start-Process -FilePath "C:\WEBRDPCLIENT\training\webRDP-Client_1.2.0.42-64.exe"
+C:\WEBRDPCLIENT\training\webRDP-Client_1.2.0.42-64.exe
 Start-Sleep -Seconds 20
 $ProcessName = Get-Process | Where-Object { $Name_ -Like 'webRDP-Client_1.2.0.42-64*' } |ForEach-Object {$Name_}
 
