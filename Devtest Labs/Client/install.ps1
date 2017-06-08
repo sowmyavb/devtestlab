@@ -98,6 +98,6 @@ try
 }
 catch
 {
-    Write-Error 'Failed to install webrdpclient'
+    Write-Error 'Failed to install client'
     Write-Host "error occured during the process"
 }
