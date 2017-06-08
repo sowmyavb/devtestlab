@@ -12,19 +12,36 @@ $folderName = "WASP"
 New-Item -Path $drive -Name $folderName -ItemType "directory"
 
 
-$dll = 'https://shuk06-my.sharepoint.com/personal/syed_shuk06_onmicrosoft_com/_layouts/15/guestaccess.aspx?docid=15c9d549f92b044d6af490c10809b484e&authkey=AWuiq5DXQFnE9W7WIr8lBgI'
+$dll = 'https://executeablesrepo.blob.core.windows.net/blob123/WASP.dll'
 
-$wasppath = "C:\Program Files (x86)\WindowsPowerShell\Modules\WASP"
+$wasppath = "C:\Program Files (x86)\WindowsPowerShell\Modules\WASP\WASP.dll"
 
 try
 {
-    (New-Object System.Net.WebClient).DownloadFile($dl, $wasppath)
+    (New-Object System.Net.WebClient).DownloadFile($dll, $wasppath)
     Write-Host "downloadning WAsp DLL successfull"
 }
 catch
 {
     Write-Error "Failed to download WebRDP Setup"
 }
+
+
+$dll1 = 'https://executeablesrepo.blob.core.windows.net/blob123/WASP.dll'
+
+$wasppath1 = "C:\Program Files\WindowsPowerShell\Modules\WASP\WASP.dll"
+
+try
+{
+    (New-Object System.Net.WebClient).DownloadFile($dll1, $wasppath1)
+    Write-Host "downloadning WAsp DLL successfull"
+}
+catch
+{
+    Write-Error "Failed to download WebRDP Setup"
+}
+
+
 
 
 $webrdpurl = 'https://executeablesrepo.blob.core.windows.net/blob123/webRDP-Client_1.2.0.42-64.exe'
