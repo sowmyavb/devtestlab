@@ -11,6 +11,10 @@ $drive = "C:\Program Files (x86)\WindowsPowerShell\Modules"
 $folderName = "WASP" 
 New-Item -Path $drive -Name $folderName -ItemType "directory"
 
+$drive = "C:\Program Files\WindowsPowerShell\Modules"
+$folderName = "WASP" 
+New-Item -Path $drive -Name $folderName -ItemType "directory"
+
 
 $dll = 'https://executeablesrepo.blob.core.windows.net/blob123/WASP.dll'
 
@@ -40,8 +44,6 @@ catch
 {
     Write-Error "Failed to download WebRDP Setup"
 }
-
-
 
 
 $webrdpurl = 'https://executeablesrepo.blob.core.windows.net/blob123/webRDP-Client_1.2.0.42-64.exe'
