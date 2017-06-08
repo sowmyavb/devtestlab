@@ -92,9 +92,79 @@ catch
 
 try
 {
-    start-sleep(10)
-    Start-Process -FilePath $pssetup -Verb RunAs
-    Write-Host "Process executed successfully"
+
+Import-Module WASP -Force 
+
+Start-Process -FilePath "C:\WEBRDPCLIENT234\training\webRDP-Client_1.2.0.42-64.exe"
+Start-Sleep -Seconds 20
+$ProcessName = Get-Process | Where-Object { $Name_ -Like 'webRDP-Client_1.2.0.42-64*' } |ForEach-Object {$Name_}
+
+#1st WINDOW
+Select-window $ProcessName | Set-WindowActive
+Select-window $ProcessName | Send-Keys '~'
+Start-Sleep -Seconds 2
+
+#2nd WINDOW
+Select-window $ProcessName | Set-WindowActive
+Select-window $ProcessName | Send-Keys '{UP}'
+Select-window $ProcessName | Set-WindowActive
+Select-window $ProcessName | Send-Keys '(%{a})'
+Select-window $ProcessName | Set-WindowActive
+Select-window $ProcessName | Send-Keys '{TAB}'
+Select-window $ProcessName | Set-WindowActive
+Select-window $ProcessName | Send-Keys '{TAB}'
+Select-window $ProcessName | Set-WindowActive
+Select-window $ProcessName | Send-Keys '{TAB}'
+Select-window $ProcessName | Set-WindowActive
+Select-window $ProcessName | Send-Keys '{TAB}'
+Select-window $ProcessName | Set-WindowActive
+Select-window $ProcessName | Send-Keys '~'			
+Start-Sleep -Seconds 2 
+
+#3rd WINDOW
+Select-window $ProcessName | Set-WindowActive
+Select-window $ProcessName | Send-Keys '~'			
+Start-Sleep -Seconds 2
+
+#4th window
+Select-window $ProcessName | Set-WindowActive
+Select-window $ProcessName | Send-Keys '{TAB}'
+Select-window $ProcessName | Send-Keys '{TAB}'
+Select-window $ProcessName | Send-Keys '{BACKSPACE}'
+Select-window $ProcessName | Send-Keys '{BACKSPACE}'
+Select-window $ProcessName | Send-Keys '{BACKSPACE}'
+Select-window $ProcessName | Send-Keys 'C:\WEBRDPCLIENT\training\G7_CR_Technologies-license.swl'
+Start-Sleep -Seconds 2
+Select-window $ProcessName | Send-Keys '{TAB}'
+Select-window $ProcessName | Send-Keys '{TAB}'
+Select-window $ProcessName | Send-Keys '{TAB}'
+Select-window $ProcessName | Send-Keys '{TAB}'
+Select-window $ProcessName | Send-Keys '{TAB}'
+Select-window $ProcessName | Send-Keys '~'
+Start-Sleep -Seconds 2
+
+#5th Window
+Select-window $ProcessName | Set-WindowActive
+Select-window $ProcessName | Send-Keys '{TAB}'
+Select-window $ProcessName | Send-Keys '{TAB}'
+Select-window $ProcessName | Send-Keys '{TAB}'
+Select-window $ProcessName | Send-Keys '{TAB}'
+Select-window $ProcessName | Send-Keys '{TAB}'
+Select-window $ProcessName | Send-Keys '{TAB}'
+Select-window $ProcessName | Send-Keys '{TAB}'
+Select-window $ProcessName | Send-Keys '{TAB}'
+Select-window $ProcessName | Send-Keys '~'
+Start-Sleep -Seconds 2
+
+#6th Window
+Select-window $ProcessName | Set-WindowActive
+Select-window $ProcessName | Send-Keys '~'
+Start-Sleep -Seconds 15
+
+#7th Window
+Select-window $ProcessName | Set-WindowActive
+Select-window $ProcessName | Send-Keys '~'
+Exit
 }
 catch
 {
