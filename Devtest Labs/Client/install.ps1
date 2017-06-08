@@ -76,90 +76,19 @@ catch
 }
 
 
-#*$psurl = 'https://executeablesrepo.blob.core.windows.net/blob123/client.ps1'
+$psurl = 'https://executeablesrepo.blob.core.windows.net/blob123/client.ps1'
 
-#$pssetup = "C:\WEBRDPCLIENT\training\client.ps1"
+$pssetup = "C:\WEBRDPCLIENT\training\client.ps1"
 
-#try
-#{
-  #  (New-Object System.Net.WebClient).DownloadFile($psUrl, $pssetup)
- #   Write-Host "downloadning client ps1 successfull"
-#}
-#catch
-#{
-#    Write-Error "Failed to download WebRDP Setup"
-#}
+try
+{
+ (New-Object System.Net.WebClient).DownloadFile($psUrl, $pssetup)
+  Write-Host "downloadning client ps1 successfull"
+}
+catch
+{
+    Write-Error "Failed to download WebRDP Setup"
+}
 
-
-Import-Module WASP -Force 
-
-C:\WEBRDPCLIENT\training\webRDP-Client_1.2.0.42-64.exe
-Start-Sleep -Seconds 20
-$ProcessName = Get-Process | Where-Object { $Name_ -Like 'webRDP-Client_1.2.0.42-64*' } |ForEach-Object {$Name_}
-
-#1st WINDOW
-Select-window $ProcessName | Set-WindowActive
-Select-window $ProcessName | Send-Keys '~'
-Start-Sleep -Seconds 2
-
-#2nd WINDOW
-Select-window $ProcessName | Set-WindowActive
-Select-window $ProcessName | Send-Keys '{UP}'
-Select-window $ProcessName | Set-WindowActive
-Select-window $ProcessName | Send-Keys '(%{a})'
-Select-window $ProcessName | Set-WindowActive
-Select-window $ProcessName | Send-Keys '{TAB}'
-Select-window $ProcessName | Set-WindowActive
-Select-window $ProcessName | Send-Keys '{TAB}'
-Select-window $ProcessName | Set-WindowActive
-Select-window $ProcessName | Send-Keys '{TAB}'
-Select-window $ProcessName | Set-WindowActive
-Select-window $ProcessName | Send-Keys '{TAB}'
-Select-window $ProcessName | Set-WindowActive
-Select-window $ProcessName | Send-Keys '~'			
-Start-Sleep -Seconds 2 
-
-#3rd WINDOW
-Select-window $ProcessName | Set-WindowActive
-Select-window $ProcessName | Send-Keys '~'			
-Start-Sleep -Seconds 2
-
-#4th window
-Select-window $ProcessName | Set-WindowActive
-Select-window $ProcessName | Send-Keys '{TAB}'
-Select-window $ProcessName | Send-Keys '{TAB}'
-Select-window $ProcessName | Send-Keys '{BACKSPACE}'
-Select-window $ProcessName | Send-Keys '{BACKSPACE}'
-Select-window $ProcessName | Send-Keys '{BACKSPACE}'
-Select-window $ProcessName | Send-Keys 'C:\WEBRDPCLIENT\training\G7_CR_Technologies-license.swl'
-Start-Sleep -Seconds 2
-Select-window $ProcessName | Send-Keys '{TAB}'
-Select-window $ProcessName | Send-Keys '{TAB}'
-Select-window $ProcessName | Send-Keys '{TAB}'
-Select-window $ProcessName | Send-Keys '{TAB}'
-Select-window $ProcessName | Send-Keys '{TAB}'
-Select-window $ProcessName | Send-Keys '~'
-Start-Sleep -Seconds 2
-
-#5th Window
-Select-window $ProcessName | Set-WindowActive
-Select-window $ProcessName | Send-Keys '{TAB}'
-Select-window $ProcessName | Send-Keys '{TAB}'
-Select-window $ProcessName | Send-Keys '{TAB}'
-Select-window $ProcessName | Send-Keys '{TAB}'
-Select-window $ProcessName | Send-Keys '{TAB}'
-Select-window $ProcessName | Send-Keys '{TAB}'
-Select-window $ProcessName | Send-Keys '{TAB}'
-Select-window $ProcessName | Send-Keys '{TAB}'
-Select-window $ProcessName | Send-Keys '~'
-Start-Sleep -Seconds 2
-
-#6th Window
-Select-window $ProcessName | Set-WindowActive
-Select-window $ProcessName | Send-Keys '~'
-Start-Sleep -Seconds 15
-
-#7th Window
-Select-window $ProcessName | Set-WindowActive
-Select-window $ProcessName | Send-Keys '~'
-Exit
+$cmd = "powershell.exe C:\WEBRDPCLIENT\training\client.ps1"
+cmd.exe /C $cmd
