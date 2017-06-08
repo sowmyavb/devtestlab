@@ -90,8 +90,6 @@ catch
 #    Write-Error "Failed to download WebRDP Setup"
 #}
 
-try
-{
 
 Import-Module WASP -Force 
 
@@ -165,9 +163,3 @@ Start-Sleep -Seconds 15
 Select-window $ProcessName | Set-WindowActive
 Select-window $ProcessName | Send-Keys '~'
 Exit
-}
-catch
-{
-    Write-Error 'Failed to install client'
-    Write-Host "error occured during the process"
-}
