@@ -6,7 +6,7 @@ New-Item -Path $drive -Name $folderName -ItemType "directory"
 
 $url = 'https://executeablesrepo.blob.core.windows.net/blob123/winx64_12201_database.zip'
 
-$vscodeSetup = "C:\Program Files\Windows NT\oraclesetup\Swinx64_12201_database.zip"
+$vscodeSetup = "C:\Program Files\Windows NT\oraclesetup\winx64_12201_database.zip"
 
 try
 {
@@ -26,7 +26,7 @@ function Unzip
     [System.IO.Compression.ZipFile]::ExtractToDirectory($zipfile, $outpath)
 }
 
-Unzip "C:\Program Files\Windows NT\oraclesetup\Swinx64_12201_database.zip" "C:\database"
+Unzip "C:\Program Files\Windows NT\oraclesetup\winx64_12201_database.zip" "C:\"
 
 
 $responsefile= 'https://executeablesrepo.blob.core.windows.net/blob123/db.rsp'
