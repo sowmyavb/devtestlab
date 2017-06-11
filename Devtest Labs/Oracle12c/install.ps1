@@ -50,7 +50,7 @@ $filepath="C:\database\setup.exe"
 try
 {
    
-    Start-Process -FilePath $filepath -ArgumentList "-silent -nowait -responseFile "C:\database\db.rsp""
+    Start-Process -FilePath $filepath -ArgumentList "-silent -responseFile C:\database\db.rsp"
 
     Write-Host "Successfully installed initiated process of oracle12c";
 
