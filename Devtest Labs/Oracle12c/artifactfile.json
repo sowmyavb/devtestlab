@@ -1,0 +1,15 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2016-11-28/dtlArtifacts.json",
+    "title": "Install Oracle 12c",
+    "description": "Installs Oracle 12c",
+    "tags": [
+        "Install",
+        "Oracle",
+        "12c"
+            ],
+    "iconUri": "https://executeablesrepo.blob.core.windows.net/blob123/G7.png",
+    "targetOsType": "Windows",
+    "runCommand": {
+        "commandToExecute": "powershell.exe -ExecutionPolicy bypass -File install.ps1"
+    }
+} 
