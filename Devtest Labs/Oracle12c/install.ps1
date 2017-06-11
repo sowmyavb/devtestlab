@@ -15,7 +15,7 @@ try
 }
 catch
 {
-    Write-Error "Failed to download sql iso";
+    Write-Error "Failed to oraclesetup zip";
 }
 
 Add-Type -AssemblyName System.IO.Compression.FileSystem
