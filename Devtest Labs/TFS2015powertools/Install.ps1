@@ -149,6 +149,7 @@ function WriteLog
         {
             Write-Host -Object $_
         }
+        Write-Host $timestampedMessage 
         Out-File -InputObject $_ -FilePath $ScriptLog -Append
     }
 }
