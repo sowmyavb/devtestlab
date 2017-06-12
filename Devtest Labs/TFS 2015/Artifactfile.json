@@ -1,7 +1,8 @@
 {
   "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2016-11-28/dtlArtifacts.json",
   "title": "Install Team Foundation Service",
-  "description": "Install TFS 2015 power tools",
+  "publisher": "G7CR Technologies India Pvt.Ltd",
+  "description": "Install TFS 2015",
   "tags": [
     "Team Foundation Service",
     "TFS"
