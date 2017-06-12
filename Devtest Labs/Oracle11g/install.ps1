@@ -43,6 +43,17 @@ catch
     Write-Error "Failed to download configurationfile";
 }
 
+
+try
+{
+    Install-WindowsFeature -Name "NET-Framework-Core"
+    Write-Host "Adding feature successfull"
+}
+catch
+{
+    Write-Error "Failed to add feature";
+}
+
 Set-Location "C:\database11g"  
 
 $filepath="C:\database11g\setup.exe"
