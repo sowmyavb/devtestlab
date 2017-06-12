@@ -144,7 +144,7 @@ function WriteLog
         [switch]$LogFileOnly
     )
 
-    $timestampedMessage = "[$([System.DateTime]::Now)] $Message" | % {
+    $timestampedMessage = "[$([System.DateTime]::Now)] $Message" | ForEach-Object {
         if (-not $LogFileOnly)
         {
             Write-Host -Object $_
