@@ -2,7 +2,7 @@
     "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2016-11-28/dtlArtifacts.json",
     "title": "Run a Powershell Script inside a virtual machine",
     "description": "Use this to run a script using PowerShell",
-    "publisher": "Microsoft",
+    "publisher": "G7CR Technologies India Pvt.Ltd",
     "tags": [
         "PowerShell"
     ],

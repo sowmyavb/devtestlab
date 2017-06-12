@@ -1,6 +1,7 @@
 {
     "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2016-11-28/dtlArtifacts.json",
     "title": "Visual Studio Community 2017",
+    "publisher": "G7CR Technologies India Pvt.Ltd",
     "description": "install visual studio community 2017",
     "tags": [
         "Windows",
