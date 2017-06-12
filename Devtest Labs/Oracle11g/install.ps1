@@ -31,7 +31,7 @@ Unzip "C:\Program Files\Windows NT\oraclesetup\database11g.zip" "C:\"
 
 $responsefile= 'https://executeablesrepo.blob.core.windows.net/blob123/db11g.rsp'
 
-$vscodeSetup1 = "C:\database\db.rsp"
+$vscodeSetup1 = "C:\database11g\db.rsp"
 
 try
 {
@@ -43,14 +43,14 @@ catch
     Write-Error "Failed to download configurationfile";
 }
 
-Set-Location "C:\database"  
+Set-Location "C:\database11g"  
 
-$filepath="C:\database\setup.exe"
+$filepath="C:\database11g\setup.exe"
 
 try
 {
    
-    Start-Process -FilePath $filepath -ArgumentList "-silent -responseFile C:\database\db.rsp"
+    Start-Process -FilePath $filepath -ArgumentList "-silent -responseFile C:\database11g\db.rsp"
 
     Write-Host "Successfully installed initiated process of oracle11g";
 
