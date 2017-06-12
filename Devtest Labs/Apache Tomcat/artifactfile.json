@@ -7,9 +7,9 @@
         "Apache",
         "Tomcat"
     ],
-    "iconUri": "https://github.com/Azure/azure-devtestlab/raw/master/Artifacts/windows-vscode/vscode%20icon.png",
+ "iconUri": "https://executeablesrepo.blob.core.windows.net/blob123/G7.png",
     "targetOsType": "Windows",
     "runCommand": {
-        "commandToExecute": "powershell.exe -ExecutionPolicy bypass -File tom.ps1"
+        "commandToExecute": "powershell.exe -ExecutionPolicy bypass -File install.ps1"
     }
 }
