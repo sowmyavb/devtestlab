@@ -37,11 +37,12 @@ function WriteLog
         [switch]$LogFileOnly
     )
 
-    $timestampedMessage = "[$([System.DateTime]::Now)] $Message" | % {
+    $timestampedMessage = "[$([System.DateTime]::Now)] $Message" | ForEach-Object {
         if (-not $LogFileOnly)
         {
             Write-Host -Object $_
         }
+        Write-Host $timestampedMessage 
         Out-File -InputObject $_ -FilePath $ScriptLog -Append
     }
 }
