@@ -51,7 +51,7 @@ try
    
    Start-Process -FilePath $filepath -ArgumentList "/ConfigurationFile=ConfigurationFile.ini"
 
-    Write-Host "Successfully installed SQL Exptress 2016";
+    Write-Host "Successfully installed SQL Express 2016";
 
 }
 catch
