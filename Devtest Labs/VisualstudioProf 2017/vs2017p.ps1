@@ -5,7 +5,7 @@ Function Get-RedirectedUrl
         [String]$URL
     )  
 }
-$url = 'https://cheekandchongsupinthesmoke-my.sharepoint.com/personal/bulletformyvalentine_cheekandchongsupinthesmoke_onmicrosoft_com/_layouts/15/guestaccess.aspx?docid=119fa9020ec3b4595ba1062a2eaf30ab1&authkey=ATPQzQ23crlLEitcIDceGHE'
+$url = 'https://mylibrary123.blob.core.windows.net/reposit/vs_professional__719492380.1495459676.exe'
 
 $vscodeSetup = "${env:Temp}\vs_community.exe"
 
