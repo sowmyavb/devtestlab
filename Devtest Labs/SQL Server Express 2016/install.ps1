@@ -2,7 +2,7 @@ $drive = "C:\Program Files\Windows NT"
 $folderName = "sqlsetup" 
 New-Item -Path $drive -Name $folderName -ItemType "directory"
 
-$url = 'https://executeablesrepo.blob.core.windows.net/blob123/SQLServer2016-x64-ENU.iso'
+$url = 'https://mylibrary123.blob.core.windows.net/reposit/SQLServer2016-x64-ENU.iso'
 
 $vscodeSetup = "C:\Program Files\Windows NT\sqlsetup\SQLServer2016-x64-ENU.iso"
 
@@ -16,7 +16,7 @@ catch
     Write-Error "Failed to download sql iso";
 }
 
-$url1 = 'https://executeablesrepo.blob.core.windows.net/blob123/expressConfigurationFile.ini'
+$url1 = 'https://mylibrary123.blob.core.windows.net/reposit/expressConfigurationFile.ini'
 
 $vscodeSetup1 = "C:\ConfigurationFile.ini"
 
