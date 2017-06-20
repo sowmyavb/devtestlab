@@ -7,7 +7,7 @@
     "Team Foundation Service",
     "TFS"
   ],
-   "iconUri": "https://executeablesrepo.blob.core.windows.net/blob123/G7.png",
+   "iconUri": "https://mylibrary123.blob.core.windows.net/reposit/G7.png",
   "targetOsType": "Windows",
   "runCommand": {
     "commandToExecute": "powershell.exe -ExecutionPolicy bypass -File install.ps1"
